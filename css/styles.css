@@ -129,73 +129,76 @@ a{
     font-family: 'Francois One', sans-serif;
 }
 
+.contenedor_camino-del-ser{
+    display: flex;
+    flex-direction: column;
+}
+
 .texto_introduccion{
 
     padding:10px;
     border: 5px solid indigo;
-    width: 100%;
+    width: 80%;
     margin-top:20px;
     border-radius: 20px;
-    text-align: justify;
+    margin-left: 35px;
 }
 
 .video video {
     margin-top: 20px;
-    width: 100%;
+    margin-left: 30px;
+    width: 80%;
 }
 
 @media(min-width:600px){
-    .video{
-        width: 80%;
+    .texto_introduccion{
         margin-left: 60px;
+    }
+
+    .video{
+        width: 60%;
+        margin-left: 120px;
     }
 
 }
 
 @media(min-width:800px){
+    .texto_introduccion{
+        margin-left: 80px;
+    }
+
     .video{
-        width: 60%;
-        margin-left: 20%;
+        width: 50%;
+        margin-left: 200px;
     }
 }
 
 @media(min-width:1024px){
-    .camino-del-ser{
-        display: grid;
-        grid-template-rows: 0.5fr, 1.5fr, 1fr;
-        grid-template-columns: 1fr, 1fr, 1fr;
-        
-        grid-template-areas: 
-        "titulo titulo titulo"
-        "texto texto video"
-        "texto texto video";
+    .contenedor_camino-del-ser{
+        display: flex;
+        flex-direction: row;
     }
-
-
-    .camino-del-ser h2{
-        grid-area: titulo;
-    }
-
     .texto_introduccion{
-        grid-area: texto;
-        position: relative;
-        left: 20px;
-        top: 60px;
+    margin-bottom: 20px;
     }
-
+    
     .video{
-        grid-area: video;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-right: 80px;
+        width: 100%;
     }
 }
 
 /**-----------------------------------------------------MAIN QUIENES SOMOS----------------------------------------------------------------**/
 
 .banner-about-us{
-    background-image: url(../assets/img/quienes-somos-ana-y-javi.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
+        background-image: url(../assets/img/quienes-somos-ana-y-javi.jpeg
+        );
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50vh;
 }
 
 .banner-about-us__text{
@@ -591,73 +594,68 @@ a{
     :root{
         --grid-width: 920px
     }
-}
-
-.grid-querie{
-    display: none;
-}
-
-.grid-item{
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    transition: scale 150ms ease;
-}
-
-.grid-item:hover{
-    scale: 1.02;
-    border-radius: 0.25rem;
-}
-
-.grid-item img{
-    width: 100%;
-}
-
-.grid-item-1{
-    background-image: url(../assets/img/yoga1.jpeg);
-}
-
-.grid-item-2{
-    background-image: url(../assets/img/yoga2.jpeg);
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-}
-
-.grid-item-3{
-    background-image: url(../assets/img/yoga3.jpeg);
-    grid-row-start: span 2;
-}
-
-.grid-item-4{
-    background-image: url(../assets/img/yoga4.jpeg);
-    grid-column-start: span 2;
-}
-
-.grid-item-5{
-    background-image: url(../assets/img/yoga5.jpeg);
-    grid-column-start: span 3;
-    grid-row-start: span 2;
-}
-
-.grid-item-6{
-    background-image: url(../assets/img/yoga6.jpeg);
-    grid-row-start: span 2;
-    grid-column-start: span 3;
-}
-
-.grid-item-7{
-    background-image: url(../assets/img/yoga7.jpeg);
-    grid-row-start: span 2;
-    grid-column-start: span 2;
-}
 
 
-.grid-item-8{
-    background-image: url(../assets/img/yoga-horarios.jpeg);
-    grid-column-start: span 6;
-    grid-row-start: span 6;
-    background-position:initial;
 }
+    .grid-querie{
+        display: none;
+    }
+    
+    .grid-item{
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        transition: scale 150ms ease;
+    }
+    
+    .grid-item:hover{
+        scale: 1.02;
+        border-radius: 0.25rem;
+    }
+    
+    .grid-item img{
+        width: 100%;
+    }
+    
+    .grid-item-1{
+        background-image: url(../assets/img/yoga1.jpeg);
+    }
+    
+    .grid-item-2{
+        background-image: url(../assets/img/yoga2.jpeg);
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+    
+    .grid-item-3{
+        background-image: url(../assets/img/yoga3.jpeg);
+        grid-row-start: span 2;
+    }
+    
+    .grid-item-4{
+        background-image: url(../assets/img/yoga4.jpeg);
+        grid-column-start: span 2;
+    
+    }
+    
+    .grid-item-5{
+        background-image: url(../assets/img/yoga5.jpeg);
+        grid-column-start: span 3;
+        grid-row-start: span 2;
+    }
+    
+    .grid-item-6{
+        background-image: url(../assets/img/yoga6.jpeg);
+        grid-row-start: span 2;
+        grid-column-start: span 3;
+    }
+    
+    .grid-item-7{
+        background-image: url(../assets/img/yoga7.jpeg);
+        grid-row-start: span 2;
+        grid-column-start: span 2;
+    }
+
 
 @media screen and (min-width:600px) {
 
