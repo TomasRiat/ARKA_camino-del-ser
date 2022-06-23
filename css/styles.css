@@ -1,0 +1,764 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/**---------HEADER-------------**/
+
+.navbar{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar img{
+    width: 100%;
+}
+
+.menu a{
+    color: indigo;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    transition: transform .2s;
+    justify-content: center;
+}
+
+.menu:hover {
+    transform: scale(1.5);
+}
+
+
+
+@media (min-width:600px){
+    .menu{
+    display: inline-block;
+    margin-left: 50px;
+    }   
+
+    .navbar img{
+        width: 80%;
+        position: relative;
+        left: 50px;
+    }
+}
+
+@media (min-width:800px){
+    .navbar img{
+        width: 60%;
+        left: 150px;
+    }
+
+    .menu{
+        margin-left: 80px;
+    }
+}
+
+@media (min-width:1024px){
+    .navbar img{
+        width:20%;
+        left: 0px;
+    }
+
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu{
+        margin-left: 58px;
+    }
+}
+
+
+
+/**-------------------------------------------------------------MAIN INDEX------------------------------------------------------------------**/
+
+.banner-index{
+    background-image: url(../assets/img/alpa-sol1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.banner-index__text{
+    color: rgba(76, 0, 130, 0.616);
+    text-align: center;
+    font-weight: 700;
+    background-color:rgba(240, 248, 255, 0.384);
+    position: relative;
+    top: 45%;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: 'Francois One', sans-serif;
+}
+
+@media (min-width:600px){
+    .banner-index{
+        height: 70vh;
+    }
+}
+@media (min-width:800px){
+    .banner-index{
+        height: 80vh;
+    }
+}
+
+.camino-del-ser h2{
+    background-color: indigo;
+    padding: 5px;
+    text-align: center;
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: 'Francois One', sans-serif;
+}
+
+.texto_introduccion{
+
+    padding:10px;
+    border: 5px solid indigo;
+    width: 100%;
+    margin-top:20px;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.video video {
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media(min-width:600px){
+    .video{
+        width: 80%;
+        margin-left: 60px;
+    }
+
+}
+
+@media(min-width:800px){
+    .video{
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+@media(min-width:1024px){
+    .camino-del-ser{
+        display: grid;
+        grid-template-rows: 0.5fr, 1.5fr, 1fr;
+        grid-template-columns: 1fr, 1fr, 1fr;
+        
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "texto texto video"
+        "texto texto video";
+    }
+
+
+    .camino-del-ser h2{
+        grid-area: titulo;
+    }
+
+    .texto_introduccion{
+        grid-area: texto;
+        position: relative;
+        left: 20px;
+        top: 60px;
+    }
+
+    .video{
+        grid-area: video;
+    }
+}
+
+/**-----------------------------------------------------MAIN QUIENES SOMOS----------------------------------------------------------------**/
+
+.banner-about-us{
+    background-image: url(../assets/img/quienes-somos-ana-y-javi.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.banner-about-us__text{
+    color: rgba(76, 0, 130, 0.616);
+    text-align: center;
+    font-weight: 700;
+    background-color:rgba(240, 248, 255, 0.384);
+    position: relative;
+    top: 45%;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: 'Francois One', sans-serif;
+}
+
+@media (min-width:600px){
+    .banner-about-us{
+        height: 70vh;
+    }
+}
+@media (min-width:800px){
+    .banner-about-us{
+        height: 80vh;
+    }
+}
+
+.analia__titulo{
+    background-color: indigo;
+    padding: 5px;
+    text-align: center;
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: 'Francois One', sans-serif;
+}
+
+.analia__foto{
+    width: 100%;
+}
+
+.analia__texto{
+    padding:10px;
+    border: 5px solid indigo;
+    width: 100%;
+    margin-top:20px;
+    border-radius: 20px;
+    text-align: justify;
+    margin-bottom: 10%;
+}
+
+.javier__titulo{
+    background-color: indigo;
+    padding: 5px;
+    text-align: center;
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: 'Francois One', sans-serif;
+}
+
+.javier__foto{
+    width: 100%;
+}
+
+.javier__texto{
+    padding:10px;
+    border: 5px solid indigo;
+    width: 100%;
+    margin-top:20px;
+    border-radius: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width:600px){
+    .analia__foto{
+        width: 80%;
+        position: relative;
+        left: 110px;
+    }
+
+    .javier__foto{
+        width: 80%;
+        position: relative;
+        left: 110px;
+    }
+}
+
+@media (min-width:800px){
+    .analia__foto{
+        width: 70%;
+        left: 120px ;
+    }
+
+    .javier__foto{
+        width: 70%;
+        left: 120px;
+    }
+}
+
+@media (min-width:1024px){
+    .analia{
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-rows: 1fr, 2fr, 1fr;
+        grid-template-areas: 
+        "titulo__analia titulo__analia titulo__analia"
+        "foto__analia foto__analia texto__analia"
+        "foto__analia foto__analia texto__analia"
+    }
+
+    .analia__titulo{
+        grid-area: titulo__analia;
+    }
+
+    .analia__foto{
+        grid-area: foto__analia;
+        width: 67%;
+        left: 10px;
+    }
+
+    .analia__texto{
+        grid-area: texto__analia;
+        align-self: center;
+        text-align: center;
+        position: relative;
+        right: 90px;
+    }
+
+    .javier{
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        grid-template-rows: 1fr, 2fr, 1fr;
+        grid-template-areas: 
+        "titulo__javier titulo__javier titulo__javier"
+        "foto__javier foto__javier texto__javier"
+        "foto__javier foto__javier texto__javier"
+    }
+
+    .javier__titulo{
+        grid-area: titulo__javier;
+    }
+
+    .javier__foto{
+        grid-area: foto__javier;
+        width: 72%;
+        left: 10px;
+    }
+
+    .javier__texto{
+        grid-area: texto__javier;
+        align-self: center;
+        text-align: center;
+        position: relative;
+        right: 65px;
+    }
+
+}
+
+/**-----------------------------------------------------MAIN CURSOS-----------------------------------------------------------------**/
+
+.banner-cursos{
+    background-image: url(../assets/img/charla8.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.banner-cursos__text{
+    color: rgba(76, 0, 130, 0.616);
+    text-align: center;
+    font-weight: 700;
+    background-color:rgba(240, 248, 255, 0.384);
+    position: relative;
+    top: 45%;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: 'Francois One', sans-serif;
+}
+
+@media (min-width:600px){
+    .banner-cursos{
+        height: 70vh;
+    }
+}
+@media (min-width:800px){
+    .banner-cursos{
+        height: 80vh;
+    }
+}
+
+.cursos__text{
+    padding:10px;
+    border: 5px solid indigo;
+    margin-top:80px;
+    border-radius: 20px;
+    text-align: justify;
+    margin-bottom: 10%;
+}
+
+.cursos__imagenes{
+
+    margin-bottom: 20px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.img__cursos{
+    border: 5px solid indigo;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 300px;
+    padding: 10px;
+}
+
+.cursos__imagenes img{
+    width: 100%;
+}
+
+/**-----------------------------------------------------MAIN CHARLAS-----------------------------------------------------------------**/
+
+.banner-charlas{
+    background-image: url(../assets/img/alpa-sol2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.banner-charlas__texto{
+    color: rgba(76, 0, 130, 0.616);
+    text-align: center;
+    font-weight: 700;
+    background-color:rgba(240, 248, 255, 0.384);
+    position: relative;
+    top: 45%;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: 'Francois One', sans-serif;
+}
+
+@media (min-width:600px){
+    .banner-charlas{
+        height: 70vh;
+    }
+}
+@media (min-width:800px){
+    .banner-charlas{
+        height: 80vh;
+    }
+
+}
+
+.charla-titulo{
+    background-color: indigo;
+    padding: 5px;
+    text-align: center;
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: 'Francois One', sans-serif;
+}
+
+
+
+.contenedor-charlas img{
+    width: 100%;
+}
+
+.contenedor-charlas p{
+    text-align: justify;
+    border: 3px solid indigo;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+@media(min-width:480px){
+    .contenedor-charlas img{
+        width: 80%;
+        position: relative;
+        left: 50px;
+        top: 10px;
+    }
+}
+
+@media(min-width:800px){
+    .contenedor-charlas img{
+        width: 50%;
+        position: relative;
+        left: 200px;
+    }
+}
+
+@media(min-width:1024px){
+    .contenedor-charlas img{
+        left: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/**----------------------------------------------MAIN YOGA----------------------------------------------------**/
+
+.banner-yoga{
+    background-image: url(../assets/img/retiro-alpa-sol2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.banner-yoga__texto{
+    color: rgba(76, 0, 130, 0.616);
+    text-align: center;
+    font-weight: 700;
+    background-color:rgba(240, 248, 255, 0.384);
+    position: relative;
+    top: 45%;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: 'Francois One', sans-serif;
+}
+
+@media (min-width:600px){
+    .banner-charlas{
+        height: 70vh;
+    }
+}
+@media (min-width:800px){
+    .banner-charlas{
+        height: 80vh;
+    }
+
+}
+
+.yoga__texto{
+    padding:10px;
+    border: 5px solid indigo;
+    width: 100%;
+    margin-top:20px;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+:root{
+    --grid-width:250px;
+}
+
+.section-grid{
+    margin-left: 5px;
+    width: var(--grid-width);
+    border-left: 4px solid indigo;
+    border-bottom: 4px solid indigo;
+
+    box-sizing: content-box;
+    border-radius: 0.25rem;
+}
+
+.grid-1{
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-auto-rows: 120px;
+}
+
+@media screen and (min-width: 480px) {
+    :root{
+        --grid-width: 430px
+    }
+}
+
+@media screen and (min-width: 600px) {
+    :root{
+        --grid-width: 550px
+    }
+
+    .grid-1{
+        grid-template-columns: repeat(7, cacl(var(--grid-width) / 7));
+
+        grid-auto-rows: calc(var(--grid-width) / 7) ;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root{
+        --grid-width: 920px
+    }
+}
+
+.grid-querie{
+    display: none;
+}
+
+.grid-item{
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: scale 150ms ease;
+}
+
+.grid-item:hover{
+    scale: 1.02;
+    border-radius: 0.25rem;
+}
+
+.grid-item img{
+    width: 100%;
+}
+
+.grid-item-1{
+    background-image: url(../assets/img/yoga1.jpeg);
+}
+
+.grid-item-2{
+    background-image: url(../assets/img/yoga2.jpeg);
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.grid-item-3{
+    background-image: url(../assets/img/yoga3.jpeg);
+    grid-row-start: span 2;
+}
+
+.grid-item-4{
+    background-image: url(../assets/img/yoga4.jpeg);
+    grid-column-start: span 2;
+}
+
+.grid-item-5{
+    background-image: url(../assets/img/yoga5.jpeg);
+    grid-column-start: span 3;
+    grid-row-start: span 2;
+}
+
+.grid-item-6{
+    background-image: url(../assets/img/yoga6.jpeg);
+    grid-row-start: span 2;
+    grid-column-start: span 3;
+}
+
+.grid-item-7{
+    background-image: url(../assets/img/yoga7.jpeg);
+    grid-row-start: span 2;
+    grid-column-start: span 2;
+}
+
+
+.grid-item-8{
+    background-image: url(../assets/img/yoga-horarios.jpeg);
+    grid-column-start: span 6;
+    grid-row-start: span 6;
+    background-position:initial;
+}
+
+@media screen and (min-width:600px) {
+
+    .grid-querie{
+        display: block;
+    }
+
+    .grid-item-1{
+        grid-column-start: span 3;
+        grid-row-start: span 3;
+    }
+    
+    .grid-item-2{
+        grid-column-start: span 4;
+        grid-row-start: span 4;
+    }
+    
+    .grid-item-3{
+        grid-row-start: 6;
+        grid-column-start: 5;
+        grid-row-end: span 2;
+        grid-column-end: span 2;
+    }
+    
+    .grid-item-4{
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        grid-row-start: 1;
+        grid-row-end: span 3;
+    }
+    
+    .grid-item-5{
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+    
+    .grid-item-6{
+        grid-row-start: span 2;
+    }
+    
+    .grid-item-7{
+        grid-row-start: span 2;
+        grid-column-start: span 3;
+    }
+}
+
+
+
+
+
+/**-----------------------------------------------FOOTER---------------------------------------------------**/
+
+footer{
+    background-color: indigo;
+    color: white;
+}
+
+.icons{
+    display: flex;
+    column-gap: 25px;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+
+.icon{
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, backgroud-color;
+    transition-duration: .25s;
+}
+
+.icon:hover{
+    outline-offset: 4px;
+}
+
+.icon:hover i{
+    animation: shake .25s;
+}
+
+@keyframes shake{
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
+
+@media(min-width:480px){
+    
+}
+
+
+@media(min-width:600px){
+    
+}
+
