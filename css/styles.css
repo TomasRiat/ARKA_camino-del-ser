@@ -298,60 +298,36 @@ a{
 }
 
 @media (min-width:1024px){
-    .analia{
-        display: grid;
-        grid-template-columns: repeat(3 1fr);
-        grid-template-rows: 1fr, 2fr, 1fr;
-        grid-template-areas: 
-        "titulo__analia titulo__analia titulo__analia"
-        "foto__analia foto__analia texto__analia"
-        "foto__analia foto__analia texto__analia"
-    }
-
-    .analia__titulo{
-        grid-area: titulo__analia;
+    .analia__contenedor{
+        display: flex;
+        flex-direction: row;
     }
 
     .analia__foto{
-        grid-area: foto__analia;
-        width: 67%;
+        width: 72%;
         left: 10px;
     }
 
     .analia__texto{
-        grid-area: texto__analia;
         align-self: center;
         text-align: center;
-        position: relative;
-        right: 90px;
+        margin: 15px;
     }
 
-    .javier{
-        display: grid;
-        grid-template-columns: repeat(3 1fr);
-        grid-template-rows: 1fr, 2fr, 1fr;
-        grid-template-areas: 
-        "titulo__javier titulo__javier titulo__javier"
-        "foto__javier foto__javier texto__javier"
-        "foto__javier foto__javier texto__javier"
-    }
-
-    .javier__titulo{
-        grid-area: titulo__javier;
+    .javier__contenedor{
+        display: flex;
+        flex-direction: row;
     }
 
     .javier__foto{
-        grid-area: foto__javier;
         width: 72%;
         left: 10px;
     }
 
     .javier__texto{
-        grid-area: texto__javier;
         align-self: center;
         text-align: center;
-        position: relative;
-        right: 65px;
+        margin: 15px;
     }
 
 }
@@ -465,7 +441,11 @@ a{
     font-family: 'Francois One', sans-serif;
 }
 
+.contenedor-charlas{
+    display: flex;
+    flex-direction: column;
 
+}
 
 .contenedor-charlas img{
     width: 100%;
@@ -500,12 +480,6 @@ a{
         left: 250px;
     }
 }
-
-
-
-
-
-
 
 
 
