@@ -34,15 +34,13 @@ a{
 .menu {
     display: flex;
     flex-direction: row;
-    transition: transform .2s;
     justify-content: center;
+    transition: transform .2s;
 }
 
 .menu:hover {
     transform: scale(1.5);
 }
-
-
 
 @media (min-width:600px){
     .menu{
@@ -85,6 +83,25 @@ a{
     }
 }
 
+@media (min-width:1200px){
+    .navbar img{
+        width: 12%;
+    }
+}
+
+/** animacion para todos lod h1**/
+
+body h1{
+    transition: transform .2s;
+}
+
+body h1:hover {
+    transform: scale(1.5);
+}
+
+body{
+    overflow-x: hidden;
+}
 
 
 /**-------------------------------------------------------------MAIN INDEX------------------------------------------------------------------**/
@@ -108,6 +125,7 @@ a{
     font-size: 2rem;
     font-family: 'Francois One', sans-serif;
 }
+
 
 @media (min-width:600px){
     .banner-index{
@@ -143,6 +161,9 @@ a{
     border-radius: 20px;
     margin-left: 35px;
 }
+
+
+
 
 .video video {
     margin-top: 20px;
@@ -187,6 +208,23 @@ a{
         margin-bottom: 10px;
         margin-right: 80px;
         width: 100%;
+    }
+}
+
+@media(min-width:1200px){
+    .texto_introduccion{
+        align-self: center;
+        transition: transform .2s;
+        margin-left: 110px;
+}
+
+.texto_introduccion:hover {
+    transform: scale(1.2);
+
+    }
+
+    .video{
+        width: 50%;
     }
 }
 
@@ -375,10 +413,11 @@ a{
 }
 
 .cursos__imagenes{
-
+    padding: 10px;
     margin-bottom: 20px;
     display: flex;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .img__cursos{
@@ -392,6 +431,11 @@ a{
 
     min-width: 300px;
     padding: 10px;
+    transition: scale 150ms ease;
+}
+
+.img__cursos:hover{
+    scale: 1.02;
 }
 
 .cursos__imagenes img{
@@ -524,6 +568,7 @@ a{
     margin-top:20px;
     border-radius: 20px;
     text-align: justify;
+    margin-bottom: 20px;
 }
 
 :root{
@@ -718,19 +763,33 @@ footer{
     animation: shake .25s;
 }
 
+.icon--youtube:hover{
+    background: rgb(250,2,2);
+    background: radial-gradient(circle, rgba(250,2,2,1) 0%, rgba(5,0,2,1) 100%);
+    outline-color: rgb(143, 2, 2);
+}
+
+.icon--facebook:hover{
+    background: rgb(2,128,250);
+    background: radial-gradient(circle, rgba(2,128,250,1) 0%, rgba(5,0,2,1) 100%);
+    outline-color: rgb(0, 69, 138);;
+}
+
+.icon--inbox:hover{
+    background: rgb(131, 130, 130);
+    background: radial-gradient(circle, rgba(152,152,152,1) 0%, rgba(5,0,2,1) 100%);
+    outline-color: rgb(104, 104, 104);
+}
+
+.icon--whatsapp:hover{
+    background: rgb(5,255,0);
+    background: radial-gradient(circle, rgba(5,255,0,1) 0%, rgba(5,0,2,1) 100%);
+    outline-color: rgb(3, 109, 1);
+}
+
 @keyframes shake{
     10%{transform: rotate(15deg);}
     20%{transform: rotate(-15deg);}
     30%{transform: rotate(15deg);}
     40%{transform: rotate(-15deg);}
 }
-
-@media(min-width:480px){
-    
-}
-
-
-@media(min-width:600px){
-    
-}
-
