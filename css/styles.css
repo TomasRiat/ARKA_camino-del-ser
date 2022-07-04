@@ -23,77 +23,27 @@ strong::selection{
 
 /**---------HEADER-------------**/
 
-.navbar{
-    background-color: white;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
+.c-indigo{
+    color: rgba(76, 0, 130, 0.86);
+}
+.c-white{
+    color:white;
+}
+.bg-indigo{
+    background-color: rgba(76, 0, 130, 0.86);
 }
 
-
-.navbar img{
+.size-video{
     width: 100%;
 }
 
-.menu a{
+.nav-item a:hover{
     color: indigo;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    transition: transform .2s;
-}
-
-.menu:hover {
-    transform: scale(1.5);
-}
-
-@media (min-width:600px){
-    .menu{
-    display: inline-block;
-    margin-left: 50px;
-    }   
-
-    .navbar img{
-        width: 80%;
-        position: relative;
-        left: 50px;
-    }
-}
-
-@media (min-width:800px){
-    .navbar img{
-        width: 60%;
-        left: 150px;
-    }
-
-    .menu{
-        margin-left: 80px;
-    }
-}
-
-@media (min-width:1024px){
-    .navbar img{
-        width:20%;
-        left: 0px;
-    }
-
-    .navbar{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu{
-        margin-left: 58px;
-    }
-}
-
-@media (min-width:1200px){
-    .navbar img{
-        width: 12%;
+@media(min-width:991px){
+    .nav-item a{
+        margin: 20px;
     }
 }
 
@@ -115,7 +65,7 @@ body{
 /**-------------------------------------------------------------MAIN INDEX------------------------------------------------------------------**/
 
 .banner-index{
-    background-image: url(../assets/img/alpa-sol1.jpeg);
+    background-image: url(../assets/img/foto-fondo5.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -170,13 +120,22 @@ body{
     margin-left: 35px;
 }
 
-
-
-
 .video video {
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 35px;
     width: 80%;
+}
+
+
+@media(min-width:475px){
+    .texto_introduccion{
+        margin-left: 50px;
+    }
+
+    .video{
+        width: 80%;
+        margin-left: 50px;
+    }
 }
 
 @media(min-width:600px){
@@ -212,10 +171,10 @@ body{
     }
     
     .video{
-        margin-top: 50px;
+        margin-top: 10px;
         margin-bottom: 10px;
         margin-right: 80px;
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -236,10 +195,16 @@ body{
     }
 }
 
+@media(min-width:1400px){
+    .video{
+        width: 30%;
+    }
+}
+
 /**-----------------------------------------------------MAIN QUIENES SOMOS----------------------------------------------------------------**/
 
 .banner-about-us{
-        background-image: url(../assets/img/quienes-somos-ana-y-javi.jpeg
+        background-image: url(../assets/img/foto-fondo2.jpg
         );
         background-size: cover;
         background-position: center;
@@ -281,6 +246,7 @@ body{
 
 .analia__foto{
     width: 100%;
+    padding: 10px;
 }
 
 .analia__texto{
@@ -304,6 +270,7 @@ body{
 
 .javier__foto{
     width: 100%;
+    padding: 10px;
 }
 
 .javier__texto{
@@ -320,26 +287,24 @@ body{
 @media (min-width:600px){
     .analia__foto{
         width: 80%;
-        position: relative;
-        left: 110px;
+        margin-left: 60px;
     }
 
     .javier__foto{
         width: 80%;
-        position: relative;
-        left: 110px;
+        margin-left: 60px;
     }
 }
 
 @media (min-width:800px){
     .analia__foto{
-        width: 70%;
-        left: 120px ;
+        width: 60%;
+        margin-left: 150px;
     }
 
     .javier__foto{
-        width: 70%;
-        left: 120px;
+        width: 60%;
+        margin-left: 150px;
     }
 }
 
@@ -351,7 +316,7 @@ body{
 
     .analia__foto{
         width: 72%;
-        left: 10px;
+
     }
 
     .analia__texto{
@@ -367,7 +332,8 @@ body{
 
     .javier__foto{
         width: 72%;
-        left: 10px;
+
+
     }
 
     .javier__texto{
@@ -376,12 +342,22 @@ body{
         margin: 15px;
     }
 
+
+    @media (min-width:1200px){
+        .analia__foto{
+            width: 50%;
+        }
+
+        .javier__foto{
+            width: 50%;
+        }
+    }
 }
 
 /**-----------------------------------------------------MAIN CURSOS-----------------------------------------------------------------**/
 
 .banner-cursos{
-    background-image: url(../assets/img/charla8.jpeg);
+    background-image: url(../assets/img/foto-fondo1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -424,18 +400,27 @@ body{
     padding: 10px;
     margin-bottom: 20px;
     display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:400px){
+    .img__cursos{
+        max-width: 500px;
+    }
+}
+
+
+@media(min-width:900px){
+    .cursos__imagenes{
+        flex-direction: row;
+    }
 }
 
 .img__cursos{
     border: 5px solid indigo;
     border-radius: 20px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     min-width: 300px;
     padding: 10px;
@@ -453,7 +438,7 @@ body{
 /**-----------------------------------------------------MAIN CHARLAS-----------------------------------------------------------------**/
 
 .banner-charlas{
-    background-image: url(../assets/img/alpa-sol2.jpeg);
+    background-image: url(../assets/img/foto-fondo4.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -496,11 +481,14 @@ body{
 .contenedor-charlas{
     display: flex;
     flex-direction: column;
+    
+    
 
 }
 
 .contenedor-charlas img{
     width: 100%;
+    padding: 10px;
 }
 
 .contenedor-charlas p{
@@ -508,29 +496,39 @@ body{
     border: 3px solid indigo;
     margin: 10px;
     border-radius: 15px;
+    padding: 10px;
 }
 
-@media(min-width:480px){
+@media(min-width:600px){
     .contenedor-charlas img{
-        width: 80%;
-        position: relative;
-        left: 50px;
-        top: 10px;
+        width: 70%;
+        margin-left: 105px;
     }
 }
 
 @media(min-width:800px){
     .contenedor-charlas img{
         width: 50%;
-        position: relative;
-        left: 200px;
+        margin-left: 200px;
     }
 }
 
 @media(min-width:1024px){
     .contenedor-charlas img{
-        left: 250px;
+        margin-left: 250px;
     }
+}
+
+@media(min-width:1200px){
+    .contenedor-charlas img{
+        margin-left: 350px;
+    }
+}
+@media (min-width:1600px){
+    .contenedor-charlas img{
+        margin-left: 450px ;
+    }
+
 }
 
 
@@ -538,7 +536,7 @@ body{
 /**----------------------------------------------MAIN YOGA----------------------------------------------------**/
 
 .banner-yoga{
-    background-image: url(../assets/img/retiro-alpa-sol2.jpeg);
+    background-image: url(../assets/img/foto-fondo3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -558,12 +556,12 @@ body{
 }
 
 @media (min-width:600px){
-    .banner-charlas{
+    .banner-yoga{
         height: 70vh;
     }
 }
 @media (min-width:800px){
-    .banner-charlas{
+    .banner-yoga{
         height: 80vh;
     }
 
@@ -582,9 +580,10 @@ body{
 .gallery-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 150px;
+    grid-auto-rows: 200px;
     padding: 20px;
     grid-gap:10px
+    
 }
 
 .gallery__img{
@@ -623,7 +622,6 @@ body{
 @media(min-width:480px){
     .gallery-container{
         grid-template-columns: repeat(4, 1fr);
-
     }
     .gallery__item:nth-child(2){
         grid-column-start: span 3;
@@ -642,7 +640,7 @@ body{
 @media(min-width:768px){
     .gallery-container{
         grid-template-columns: repeat(5, 1fr);
-
+        grid-auto-rows: 250px;
     }
 
     .gallery__item:nth-child(1){
@@ -676,9 +674,10 @@ body{
 @media(min-width:1024px){
     .gallery-container{
         grid-template-columns: repeat(4, 1fr);
-        margin: 20px;
+        margin: 50px;
         border: 5px solid indigo;
         border-radius: 20px;
+        grid-auto-rows: 150px;
     }
 
     .gallery__item:nth-child(1){
@@ -723,7 +722,13 @@ body{
         grid-row-start: span 2;
     }
     
+}
 
+    @media(min-width:1200px){
+        .gallery-container{
+            margin: 100px;
+            grid-auto-rows: 200px;
+        }
 }
 
 
@@ -732,6 +737,11 @@ body{
 footer{
     background-color: indigo;
     color: white;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #fff;
 }
 
 .icons{
