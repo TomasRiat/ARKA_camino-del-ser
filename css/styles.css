@@ -73,7 +73,7 @@ body{
 }
 
 .banner-index__text{
-    color: rgba(76, 0, 130, 0.616);
+    color: rgba(76, 0, 130, 0.959);
     text-align: center;
     font-weight: 700;
     background-color:rgba(240, 248, 255, 0.384);
@@ -93,6 +93,12 @@ body{
 @media (min-width:800px){
     .banner-index{
         height: 80vh;
+    }
+}
+
+@media (min-width:1024px){
+    .banner-index__text{
+        font-size: 3rem;
     }
 }
 
@@ -213,7 +219,7 @@ body{
 }
 
 .banner-about-us__text{
-    color: rgba(76, 0, 130, 0.616);
+    color: rgba(76, 0, 130, 0.938);
     text-align: center;
     font-weight: 700;
     background-color:rgba(240, 248, 255, 0.384);
@@ -232,6 +238,12 @@ body{
 @media (min-width:800px){
     .banner-about-us{
         height: 80vh;
+    }
+}
+
+@media (min-width:1024px){
+    .banner-about-us__text{
+        font-size: 3rem;
     }
 }
 
@@ -365,7 +377,7 @@ body{
 }
 
 .banner-cursos__text{
-    color: rgba(76, 0, 130, 0.616);
+    color: rgba(76, 0, 130, 0.932);
     text-align: center;
     font-weight: 700;
     background-color:rgba(240, 248, 255, 0.384);
@@ -384,6 +396,12 @@ body{
 @media (min-width:800px){
     .banner-cursos{
         height: 80vh;
+    }
+}
+
+@media (min-width:1024px){
+    .banner-cursos__text{
+        font-size: 3rem;
     }
 }
 
@@ -446,7 +464,7 @@ body{
 }
 
 .banner-charlas__texto{
-    color: rgba(76, 0, 130, 0.616);
+    color: rgba(76, 0, 130, 0.918);
     text-align: center;
     font-weight: 700;
     background-color:rgba(240, 248, 255, 0.384);
@@ -467,6 +485,12 @@ body{
         height: 80vh;
     }
 
+}
+
+@media (min-width:1024px){
+    .banner-charlas__text{
+        font-size: 3rem;
+    }
 }
 
 .charla-titulo{
@@ -544,7 +568,7 @@ body{
 }
 
 .banner-yoga__texto{
-    color: rgba(76, 0, 130, 0.616);
+    color: rgba(76, 0, 130, 0.904);
     text-align: center;
     font-weight: 700;
     background-color:rgba(240, 248, 255, 0.384);
@@ -564,7 +588,12 @@ body{
     .banner-yoga{
         height: 80vh;
     }
+}
 
+@media (min-width:1024px){
+    .banner-yoga__texto{
+        font-size: 3rem;
+    }
 }
 
 .yoga__texto{
