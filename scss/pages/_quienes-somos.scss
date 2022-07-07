@@ -1,0 +1,153 @@
+.banner-about-us{
+    background-image: url(../assets/img/foto-fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    &__text{
+        color: $clr-h1-indigo;
+    text-align: center;
+    font-weight: 700;
+    background-color: $clr-bg-h1;
+    position: relative;
+    top: 45%;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: $ff-francois
+    }
+}
+
+
+.analia{
+    &__titulo{
+        background-color: indigo;
+        padding: 5px;
+        text-align: center;
+        font-size: 2rem;
+        color: aliceblue;
+        font-family: 'Francois One', sans-serif;
+    }
+    &__foto{
+    width: 100%;
+    padding: 10px;
+    }
+    &__texto{
+        padding:10px;
+        border: 5px solid indigo;
+        width: 100%;
+        margin-top:20px;
+        border-radius: 20px;
+        text-align: justify;
+        margin-bottom: 10%;
+    }
+}
+
+.javier{
+    &__titulo{
+        background-color: indigo;
+        padding: 5px;
+        text-align: center;
+        font-size: 2rem;
+        color: aliceblue;
+        font-family: 'Francois One', sans-serif;
+    }
+    &__foto{
+        width: 100%;
+        padding: 10px;
+    }
+    &__texto{
+        padding:10px;
+        border: 5px solid indigo;
+        width: 100%;
+        margin-top:20px;
+        border-radius: 20px;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+}   
+
+
+
+@include tablet{
+    .banner-about-us{
+        height: 70vh;
+    }
+
+    .analia__foto{
+        width: 80%;
+        margin-left: 60px;
+    }
+
+    .javier__foto{
+        width: 80%;
+        margin-left: 60px;
+    }
+}
+
+@include tablet-grande{
+    .banner-about-us{
+        height: 80vh;
+    }
+
+    .analia__foto{
+        width: 60%;
+        margin-left: 150px;
+    }
+
+    .javier__foto{
+        width: 60%;
+        margin-left: 150px;
+    }
+}
+
+@include desktop {
+    .banner-about-us__text{
+        font-size: 3rem;
+    }
+
+    .analia{
+    &__contenedor{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__foto{
+        width: 72%;
+
+    }
+
+    &__texto{
+        align-self: center;
+        text-align: center;
+        margin: 15px;
+    }
+}
+    .javier{
+    &__contenedor{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__foto{
+        width: 72%;
+
+
+    }
+
+    &__texto{
+        align-self: center;
+        text-align: center;
+        margin: 15px;
+    }
+}
+}
+
+@include wide {
+    .analia__foto{
+        width: 50%;
+    }
+
+    .javier__foto{
+        width: 50%;
+    }
+}

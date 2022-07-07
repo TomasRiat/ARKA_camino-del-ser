@@ -1,0 +1,87 @@
+.banner-charlas{
+    background-image: url(../assets/img/foto-fondo4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    &__texto{
+    color: $clr-h1-indigo;
+    text-align: center;
+    font-weight: 700;
+    background-color: $clr-bg-h1;
+    position: relative;
+    top: 45%;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: $ff-francois
+    }
+}
+
+.charla-titulo{
+    background-color: indigo;
+    padding: 5px;
+    text-align: center;
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: 'Francois One', sans-serif;
+}
+
+.contenedor-charlas{
+    display: flex;
+    flex-direction: column;
+    & img{
+        width: 100%;
+        padding: 10px;
+    }
+    & p{
+        text-align: justify;
+        border: 3px solid indigo;
+        margin: 10px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+}
+
+@include tablet{
+    .banner-charlas{
+        height: 70vh;
+    }
+
+    .contenedor-charlas img{
+        width: 70%;
+        margin-left: 105px;
+    }
+}
+
+@include tablet-grande{
+    .banner-charlas{
+        height: 80vh;
+    }
+
+    .contenedor-charlas img{
+        width: 50%;
+        margin-left: 200px;
+    }
+}
+
+@include desktop {
+    .banner-charlas__text{
+        font-size: 3rem;
+    }
+
+    .contenedor-charlas img{
+        margin-left: 250px;
+    }
+}
+
+@include wide {
+    .contenedor-charlas img{
+        margin-left: 350px;
+    }
+}
+
+@include extra-wide {
+    .contenedor-charlas img{
+        margin-left: 450px ;
+    }
+}

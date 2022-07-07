@@ -19,3 +19,17 @@ p::selection{
 strong::selection{
     color: indigo;
 }
+
+h1{
+    transition: transform 200ms ease;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+

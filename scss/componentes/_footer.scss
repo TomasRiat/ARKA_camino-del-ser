@@ -1,0 +1,71 @@
+footer{
+    background-color: indigo;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons{
+    display: flex;
+    column-gap: 25px;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+
+.icon{
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, backgroud-color;
+    transition-duration: .25s;
+}
+
+.icon:hover{
+    outline-offset: 4px;
+}
+
+.icon:hover i{
+    animation: shake .25s;
+}
+
+.icon--youtube:hover{
+    background: rgb(250,2,2);
+    background: radial-gradient(circle, rgba(250,2,2,1) 0%, rgba(5,0,2,1) 100%);
+    outline-color: rgb(143, 2, 2);
+}
+
+.icon--facebook:hover{
+    background: rgb(2,128,250);
+    background: radial-gradient(circle, rgba(2,128,250,1) 0%, rgba(5,0,2,1) 100%);
+    outline-color: rgb(0, 69, 138);;
+}
+
+.icon--inbox:hover{
+    background: rgb(131, 130, 130);
+    background: radial-gradient(circle, rgba(152,152,152,1) 0%, rgba(5,0,2,1) 100%);
+    outline-color: rgb(104, 104, 104);
+}
+
+.icon--whatsapp:hover{
+    background: rgb(5,255,0);
+    background: radial-gradient(circle, rgba(5,255,0,1) 0%, rgba(5,0,2,1) 100%);
+    outline-color: rgb(3, 109, 1);
+}
+
+@keyframes shake{
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}

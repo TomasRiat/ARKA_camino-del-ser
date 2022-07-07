@@ -1,0 +1,45 @@
+@mixin large {
+    @media screen and (min-width:991px){
+        @content;
+    }
+}
+
+@mixin celular-lateral {
+    @media screen and (min-width:475px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width:600px){
+        @content;
+    }
+}
+
+@mixin tablet-grande {
+    @media screen and (min-width:800px){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width:1024px){
+        @content;
+    }
+}
+
+@mixin wide  {
+    @media screen and (min-width:1200px){
+        @content;
+    }
+}
+
+@mixin extra-wide  {
+    @media screen and (min-width:1400px){
+        @content;
+    }
+}
+
+
+
+

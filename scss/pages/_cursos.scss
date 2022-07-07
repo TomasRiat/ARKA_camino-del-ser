@@ -1,0 +1,84 @@
+.banner-cursos{
+    background-image: url(../assets/img/foto-fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    &__text{
+        color: $clr-h1-indigo;
+    text-align: center;
+    font-weight: 700;
+    background-color: $clr-bg-h1;
+    position: relative;
+    top: 45%;
+    padding: 5px;
+    font-size: 2rem;
+    font-family: $ff-francois
+    }
+}
+
+.cursos{
+    &__text{
+        padding:10px;
+        border: 5px solid indigo;
+        margin-top:80px;
+        border-radius: 20px;
+        text-align: justify;
+        margin-bottom: 10%;
+    }
+    &__imagenes{
+        padding: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+.img__cursos{
+    border: 5px solid indigo;
+    border-radius: 20px;
+
+    min-width: 300px;
+    padding: 10px;
+    transition: scale 200ms ease;
+    &:hover{
+        scale: 1.02;
+    }
+}
+
+@include celular-lateral{
+    .img__cursos{
+        max-width: 500px;
+    }
+}
+
+@include tablet{
+    .banner-cursos{
+        height: 70vh;
+    }
+}
+
+@include tablet-grande{
+    .banner-cursos{
+        height: 80vh;
+    }
+
+    
+}
+
+@include desktop {
+    .banner-cursos__text{
+        font-size: 3rem;
+    }
+
+    .cursos__imagenes{
+        flex-direction: row;
+    }
+}
+
+
