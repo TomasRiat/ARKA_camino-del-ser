@@ -1,29 +1,13 @@
 .banner-charlas{
     background-image: url(../assets/img/foto-fondo4.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
+    @include background-image;
     &__texto{
-    color: $clr-h1-indigo;
-    text-align: center;
-    font-weight: 700;
-    background-color: $clr-bg-h1;
-    position: relative;
-    top: 45%;
-    padding: 5px;
-    font-size: 2rem;
-    font-family: $ff-francois
+        @extend .banner-index__text;
     }
 }
 
 .charla-titulo{
-    background-color: indigo;
-    padding: 5px;
-    text-align: center;
-    font-size: 2rem;
-    color: aliceblue;
-    font-family: 'Francois One', sans-serif;
+    @extend .analia__titulo;
 }
 
 .contenedor-charlas{
@@ -35,7 +19,7 @@
     }
     & p{
         text-align: justify;
-        border: 3px solid indigo;
+        border: 3px solid $clr-indigo;
         margin: 10px;
         border-radius: 15px;
         padding: 10px;
@@ -66,7 +50,7 @@
 
 @include desktop {
     .banner-charlas__text{
-        font-size: 3rem;
+        @include font(3rem, 700);
     }
 
     .contenedor-charlas img{

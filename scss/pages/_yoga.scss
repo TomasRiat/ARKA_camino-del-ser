@@ -1,31 +1,25 @@
 .banner-yoga{
-    background-image: url(../assets/img/foto-fondo1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
+    background-image: url(../assets/img/foto-fondo2.jpg);
+    @include background-image;
     &__texto{
-        color: $clr-h1-indigo;
-    text-align: center;
-    font-weight: 700;
-    background-color: $clr-bg-h1;
-    position: relative;
-    top: 45%;
-    padding: 5px;
-    font-size: 2rem;
-    font-family: $ff-francois
+        @extend .banner-index__text;
     }
 }
 
 .yoga__texto{
     padding:10px;
-    border: 5px solid indigo;
+    border: 5px solid $clr-indigo;
     width: 100%;
     margin-top:20px;
     border-radius: 20px;
     text-align: justify;
     margin-bottom: 20px;
 }
+
+.yoga-titulo{
+    @extend .analia__titulo;
+}
+
 
 .gallery{
     display: grid;

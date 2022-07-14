@@ -1,0 +1,11 @@
+@mixin font($size, $weight){
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin background-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}

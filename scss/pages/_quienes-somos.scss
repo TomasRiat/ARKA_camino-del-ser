@@ -1,30 +1,19 @@
 .banner-about-us{
     background-image: url(../assets/img/foto-fondo2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
+    @include background-image;
     &__text{
-        color: $clr-h1-indigo;
-    text-align: center;
-    font-weight: 700;
-    background-color: $clr-bg-h1;
-    position: relative;
-    top: 45%;
-    padding: 5px;
-    font-size: 2rem;
-    font-family: $ff-francois
+        @extend .banner-index__text;
     }
 }
 
 
 .analia{
     &__titulo{
-        background-color: indigo;
+        background-color: $clr-h1-indigo;
         padding: 5px;
         text-align: center;
-        font-size: 2rem;
-        color: aliceblue;
+        @include font(2rem, 500);
+        color: $clr-white;
         font-family: 'Francois One', sans-serif;
     }
     &__foto{
@@ -33,7 +22,7 @@
     }
     &__texto{
         padding:10px;
-        border: 5px solid indigo;
+        border: 5px solid $clr-indigo;
         width: 100%;
         margin-top:20px;
         border-radius: 20px;
@@ -44,29 +33,15 @@
 
 .javier{
     &__titulo{
-        background-color: indigo;
-        padding: 5px;
-        text-align: center;
-        font-size: 2rem;
-        color: aliceblue;
-        font-family: 'Francois One', sans-serif;
+        @extend .analia__titulo
     }
     &__foto{
-        width: 100%;
-        padding: 10px;
+        @extend .analia__foto
     }
     &__texto{
-        padding:10px;
-        border: 5px solid indigo;
-        width: 100%;
-        margin-top:20px;
-        border-radius: 20px;
-        text-align: justify;
-        margin-bottom: 10px;
+        @extend .analia__texto
     }
 }   
-
-
 
 @include tablet{
     .banner-about-us{
@@ -102,7 +77,7 @@
 
 @include desktop {
     .banner-about-us__text{
-        font-size: 3rem;
+        @include font(3rem, 700);
     }
 
     .analia{

@@ -55,24 +55,15 @@ body {
   background-repeat: no-repeat;
   height: 50vh;
 }
-.banner-index__text {
+.banner-index__text, .banner-yoga__texto, .banner-cursos__text, .banner-charlas__texto, .banner-about-us__text {
   color: rgba(76, 0, 130, 0.959);
   text-align: center;
+  font-size: 2.5rem;
   font-weight: 700;
   background-color: rgba(240, 248, 255, 0.384);
   position: relative;
   top: 45%;
   padding: 5px;
-  font-size: 2rem;
-  font-family: "Francois One", sans-serif;
-}
-
-.camino-del-ser h2 {
-  background-color: indigo;
-  padding: 5px;
-  text-align: center;
-  font-size: 2rem;
-  color: aliceblue;
   font-family: "Francois One", sans-serif;
 }
 
@@ -82,7 +73,7 @@ body {
 }
 .contenedor__texto {
   padding: 10px;
-  border: 5px solid indigo;
+  border: 5px solid rgba(76, 0, 130, 0.86);
   width: 80%;
   margin-top: 20px;
   border-radius: 20px;
@@ -128,8 +119,9 @@ body {
   }
 }
 @media screen and (min-width: 1024px) {
-  .banner-index__text {
+  .banner-index__text, .banner-yoga__texto, .banner-cursos__text, .banner-charlas__texto, .banner-about-us__text {
     font-size: 3rem;
+    font-weight: 700;
   }
   .contenedor {
     display: flex;
@@ -165,33 +157,22 @@ body {
   background-repeat: no-repeat;
   height: 50vh;
 }
-.banner-about-us__text {
-  color: rgba(76, 0, 130, 0.959);
-  text-align: center;
-  font-weight: 700;
-  background-color: rgba(240, 248, 255, 0.384);
-  position: relative;
-  top: 45%;
-  padding: 5px;
-  font-size: 2rem;
-  font-family: "Francois One", sans-serif;
-}
-
-.analia__titulo {
-  background-color: indigo;
+.analia__titulo, .yoga-titulo, .charla-titulo, .javier__titulo, .camino-del-ser h2 {
+  background-color: rgba(76, 0, 130, 0.959);
   padding: 5px;
   text-align: center;
   font-size: 2rem;
-  color: aliceblue;
+  font-weight: 500;
+  color: white;
   font-family: "Francois One", sans-serif;
 }
-.analia__foto {
+.analia__foto, .javier__foto {
   width: 100%;
   padding: 10px;
 }
-.analia__texto {
+.analia__texto, .javier__texto {
   padding: 10px;
-  border: 5px solid indigo;
+  border: 5px solid rgba(76, 0, 130, 0.86);
   width: 100%;
   margin-top: 20px;
   border-radius: 20px;
@@ -199,33 +180,11 @@ body {
   margin-bottom: 10%;
 }
 
-.javier__titulo {
-  background-color: indigo;
-  padding: 5px;
-  text-align: center;
-  font-size: 2rem;
-  color: aliceblue;
-  font-family: "Francois One", sans-serif;
-}
-.javier__foto {
-  width: 100%;
-  padding: 10px;
-}
-.javier__texto {
-  padding: 10px;
-  border: 5px solid indigo;
-  width: 100%;
-  margin-top: 20px;
-  border-radius: 20px;
-  text-align: justify;
-  margin-bottom: 10px;
-}
-
 @media screen and (min-width: 600px) {
   .banner-about-us {
     height: 70vh;
   }
-  .analia__foto {
+  .analia__foto, .javier__foto {
     width: 80%;
     margin-left: 60px;
   }
@@ -238,7 +197,7 @@ body {
   .banner-about-us {
     height: 80vh;
   }
-  .analia__foto {
+  .analia__foto, .javier__foto {
     width: 60%;
     margin-left: 150px;
   }
@@ -250,15 +209,16 @@ body {
 @media screen and (min-width: 1024px) {
   .banner-about-us__text {
     font-size: 3rem;
+    font-weight: 700;
   }
   .analia__contenedor {
     display: flex;
     flex-direction: row;
   }
-  .analia__foto {
+  .analia__foto, .javier__foto {
     width: 72%;
   }
-  .analia__texto {
+  .analia__texto, .javier__texto {
     align-self: center;
     text-align: center;
     margin: 15px;
@@ -277,7 +237,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .analia__foto {
+  .analia__foto, .javier__foto {
     width: 50%;
   }
   .javier__foto {
@@ -291,27 +251,6 @@ body {
   background-repeat: no-repeat;
   height: 50vh;
 }
-.banner-charlas__texto {
-  color: rgba(76, 0, 130, 0.959);
-  text-align: center;
-  font-weight: 700;
-  background-color: rgba(240, 248, 255, 0.384);
-  position: relative;
-  top: 45%;
-  padding: 5px;
-  font-size: 2rem;
-  font-family: "Francois One", sans-serif;
-}
-
-.charla-titulo {
-  background-color: indigo;
-  padding: 5px;
-  text-align: center;
-  font-size: 2rem;
-  color: aliceblue;
-  font-family: "Francois One", sans-serif;
-}
-
 .contenedor-charlas {
   display: flex;
   flex-direction: column;
@@ -322,7 +261,7 @@ body {
 }
 .contenedor-charlas p {
   text-align: justify;
-  border: 3px solid indigo;
+  border: 3px solid rgba(76, 0, 130, 0.86);
   margin: 10px;
   border-radius: 15px;
   padding: 10px;
@@ -349,6 +288,7 @@ body {
 @media screen and (min-width: 1024px) {
   .banner-charlas__text {
     font-size: 3rem;
+    font-weight: 700;
   }
   .contenedor-charlas img {
     margin-left: 250px;
@@ -371,21 +311,9 @@ body {
   background-repeat: no-repeat;
   height: 50vh;
 }
-.banner-cursos__text {
-  color: rgba(76, 0, 130, 0.959);
-  text-align: center;
-  font-weight: 700;
-  background-color: rgba(240, 248, 255, 0.384);
-  position: relative;
-  top: 45%;
-  padding: 5px;
-  font-size: 2rem;
-  font-family: "Francois One", sans-serif;
-}
-
 .cursos__text {
   padding: 10px;
-  border: 5px solid indigo;
+  border: 5px solid rgba(76, 0, 130, 0.86);
   margin-top: 80px;
   border-radius: 20px;
   text-align: justify;
@@ -404,7 +332,7 @@ body {
 }
 
 .img__cursos {
-  border: 5px solid indigo;
+  border: 5px solid rgba(76, 0, 130, 0.86);
   border-radius: 20px;
   min-width: 300px;
   padding: 10px;
@@ -438,27 +366,15 @@ body {
   }
 }
 .banner-yoga {
-  background-image: url(../assets/img/foto-fondo1.jpg);
+  background-image: url(../assets/img/foto-fondo2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 50vh;
 }
-.banner-yoga__texto {
-  color: rgba(76, 0, 130, 0.959);
-  text-align: center;
-  font-weight: 700;
-  background-color: rgba(240, 248, 255, 0.384);
-  position: relative;
-  top: 45%;
-  padding: 5px;
-  font-size: 2rem;
-  font-family: "Francois One", sans-serif;
-}
-
 .yoga__texto {
   padding: 10px;
-  border: 5px solid indigo;
+  border: 5px solid rgba(76, 0, 130, 0.86);
   width: 100%;
   margin-top: 20px;
   border-radius: 20px;
@@ -601,13 +517,13 @@ body {
   }
 }
 footer {
-  background-color: indigo;
+  background-color: rgba(76, 0, 130, 0.959);
   color: white;
 }
 
 footer a:hover {
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 
 .icons {
@@ -618,16 +534,15 @@ footer a:hover {
 }
 
 .icon {
-  color: white;
   width: 50px;
   height: 50px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 26px;
-  color: #fff;
+  color: white;
   border-radius: 50%;
-  outline: 2px solid #fff;
+  outline: 2px solid white;
   transition-property: outline-offset, outline-color, backgroud-color;
   transition-duration: 0.25s;
 }
@@ -641,25 +556,21 @@ footer a:hover {
 }
 
 .icon--youtube:hover {
-  background: rgb(250, 2, 2);
   background: radial-gradient(circle, rgb(250, 2, 2) 0%, rgb(5, 0, 2) 100%);
   outline-color: rgb(143, 2, 2);
 }
 
 .icon--facebook:hover {
-  background: rgb(2, 128, 250);
   background: radial-gradient(circle, rgb(2, 128, 250) 0%, rgb(5, 0, 2) 100%);
   outline-color: rgb(0, 69, 138);
 }
 
-.icon--inbox:hover {
-  background: rgb(131, 130, 130);
-  background: radial-gradient(circle, rgb(152, 152, 152) 0%, rgb(5, 0, 2) 100%);
-  outline-color: rgb(104, 104, 104);
+.icon--instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  outline-color: #a02d76;
 }
 
 .icon--whatsapp:hover {
-  background: rgb(5, 255, 0);
   background: radial-gradient(circle, rgb(5, 255, 0) 0%, rgb(5, 0, 2) 100%);
   outline-color: rgb(3, 109, 1);
 }

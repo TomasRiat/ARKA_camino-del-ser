@@ -1,26 +1,15 @@
 .banner-cursos{
     background-image: url(../assets/img/foto-fondo1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
+    @include background-image;
     &__text{
-        color: $clr-h1-indigo;
-    text-align: center;
-    font-weight: 700;
-    background-color: $clr-bg-h1;
-    position: relative;
-    top: 45%;
-    padding: 5px;
-    font-size: 2rem;
-    font-family: $ff-francois
+        @extend .banner-index__text;
     }
 }
 
 .cursos{
     &__text{
         padding:10px;
-        border: 5px solid indigo;
+        border: 5px solid $clr-indigo;
         margin-top:80px;
         border-radius: 20px;
         text-align: justify;
@@ -40,7 +29,7 @@
 }
 
 .img__cursos{
-    border: 5px solid indigo;
+    border: 5px solid $clr-indigo;
     border-radius: 20px;
 
     min-width: 300px;

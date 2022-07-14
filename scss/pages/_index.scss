@@ -1,18 +1,14 @@
 .banner-index{
     background-image: url(../assets/img/foto-fondo5.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
+    @include background-image;
     &__text{
         color: $clr-h1-indigo;
     text-align: center;
-    font-weight: 700;
+    @include font(2.5rem, 700);
     background-color: $clr-bg-h1;
     position: relative;
     top: 45%;
     padding: 5px;
-    font-size: 2rem;
     font-family: $ff-francois
     }
 }
@@ -20,12 +16,7 @@
 
 
 .camino-del-ser h2{
-    background-color: indigo;
-    padding: 5px;
-    text-align: center;
-    font-size: 2rem;
-    color: aliceblue;
-    font-family: 'Francois One', sans-serif;
+    @extend .analia__titulo;
 }
 
 .contenedor{
@@ -33,7 +24,7 @@
     flex-direction: column;
     &__texto{
         padding:10px;
-    border: 5px solid indigo;
+    border: 5px solid $clr-indigo;
     width: 80%;
     margin-top:20px;
     border-radius: 20px;
@@ -89,7 +80,7 @@
 
 @include desktop {
     .banner-index__text{
-        font-size: 3rem;
+        @include font(3rem, 700);
     }
 
     .contenedor{
