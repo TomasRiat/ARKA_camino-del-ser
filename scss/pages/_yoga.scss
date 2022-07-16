@@ -1,5 +1,5 @@
 .banner-yoga{
-    background-image: url(../assets/img/foto-fondo2.jpg);
+    background-image: url(../assets/img/foto-fondo3.jpg);
     @include background-image;
     &__texto{
         @extend .banner-index__text;
@@ -33,7 +33,7 @@
         object-fit: cover;
         transition: 200ms ease;
         &:hover{
-            transform: scale(1.1);
+            transform: scale(1.03);
             box-shadow: 0px 9px 28px 3px rgba(0,0,0,0.9) ;
         }
     }

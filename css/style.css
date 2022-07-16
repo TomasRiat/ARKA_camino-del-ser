@@ -39,6 +39,11 @@ body {
   color: rgba(76, 0, 130, 0.86);
 }
 
+.navbar-toggler {
+  border: 3px solid rgba(76, 0, 130, 0.86);
+  box-shadow: 0px 9px 28px 3px rgba(0, 0, 0, 0.4);
+}
+
 @media screen and (min-width: 991px) {
   .nav-item a {
     margin: 20px;
@@ -366,7 +371,7 @@ body {
   }
 }
 .banner-yoga {
-  background-image: url(../assets/img/foto-fondo2.jpg);
+  background-image: url(../assets/img/foto-fondo3.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -396,7 +401,7 @@ body {
   transition: 200ms ease;
 }
 .gallery__img:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   box-shadow: 0px 9px 28px 3px rgba(0, 0, 0, 0.9);
 }
 
