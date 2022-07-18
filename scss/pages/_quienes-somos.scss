@@ -119,10 +119,18 @@
 
 @include wide {
     .analia__foto{
+        width: 40%;
+    }
+
+    .analia__texto{
         width: 50%;
     }
 
     .javier__foto{
+        width: 40%;
+    }
+
+    .javier__texto{
         width: 50%;
     }
 }

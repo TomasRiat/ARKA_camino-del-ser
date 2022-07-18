@@ -6,34 +6,29 @@
     }
 }
 
-.charla-titulo{
-    @extend .analia__titulo;
+.charlas{
+    &__text{
+        @extend .cursos__text
+    }
+    &__imagenes{
+        @extend .cursos__imagenes
+    }
 }
 
-.contenedor-charlas{
-    display: flex;
-    flex-direction: column;
-    & img{
-        width: 100%;
-        padding: 10px;
-    }
-    & p{
-        text-align: justify;
-        border: 3px solid $clr-indigo;
-        margin: 10px;
-        border-radius: 15px;
-        padding: 10px;
+.img__charlas{
+    @extend .img__cursos
+
+}
+
+@include celular-lateral{
+    .img__charlas{
+        max-width: 500px;
     }
 }
 
 @include tablet{
     .banner-charlas{
         height: 70vh;
-    }
-
-    .contenedor-charlas img{
-        width: 70%;
-        margin-left: 105px;
     }
 }
 
@@ -42,30 +37,15 @@
         height: 80vh;
     }
 
-    .contenedor-charlas img{
-        width: 50%;
-        margin-left: 200px;
-    }
+    
 }
 
 @include desktop {
     .banner-charlas__text{
-        @include font(3rem, 700);
+        font-size: 3rem;
     }
 
-    .contenedor-charlas img{
-        margin-left: 250px;
-    }
-}
-
-@include wide {
-    .contenedor-charlas img{
-        margin-left: 350px;
-    }
-}
-
-@include extra-wide {
-    .contenedor-charlas img{
-        margin-left: 450px ;
+    .charlas__imagenes{
+        flex-direction: row;
     }
 }
