@@ -7,7 +7,7 @@
     "compile:sass": "sass --watch scss/main.scss css/style.css"
   },
   "keywords": [
-    "sass"
+    "sass", "bootstrap"
   ],
   "author": "Tomas",
   "license": "ISC"
