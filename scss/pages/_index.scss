@@ -3,13 +3,13 @@
     @include background-image;
     &__text{
         color: $clr-h1-indigo;
-    text-align: center;
-    @include font(2.5rem, 700);
-    background-color: $clr-bg-h1;
-    position: relative;
-    top: 45%;
-    padding: 5px;
-    font-family: $ff-francois
+        text-align: center;
+        @include font(2.5rem, 700);
+        background-color: $clr-bg-h1;
+        position: relative;
+        top: 45%;
+        padding: 5px;
+        font-family: $ff-francois;
     }
 }
 
@@ -38,12 +38,18 @@
     }
 }
 
+video{
+    overflow: hidden;
+    width:100%;
+    padding: 20px;
+}
+
 @include celular-lateral{
     .contenedor__texto{
         margin-left: 50px;
     }
 
-    .contenedor__video iframe{
+    .contenedor__video video{
         width: 80%;
         margin-left: 50px;
     }
@@ -58,9 +64,8 @@
         margin-left: 60px;
     }
 
-    .contenedor__video iframe{
-        width: 60%;
-        margin-left: 120px;
+    .contenedor__video video{
+        width: 80%;
     }
 }
 
@@ -73,9 +78,9 @@
         margin-left: 80px;
     }
 
-    .contenedor__video iframe{
-        width: 50%;
-        margin-left: 200px;
+    .contenedor__video video{
+        width: 85%;
+
     }
 }
 
@@ -89,12 +94,11 @@
         flex-direction: row;
         &__texto{
             margin-bottom: 20px;
-            width: 40%;
-        }
-        &__video iframe{
-
-            margin-left: 100px;
             width: 100%;
+        }
+        &__video video{
+            margin-top: 100px;
+            width: 90%;
         }
     }
 }
@@ -105,13 +109,8 @@
         margin-left: 110px;
     }
 
-    .contenedor__video iframe{
-        margin-left: 150px;
+    .contenedor__video video{
+        margin-top: 40px;
     }
 }
 
-@include extra-wide{
-    .contenedor__video iframe{
-        margin-left: 200px;
-    }
-}

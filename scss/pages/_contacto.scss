@@ -1,0 +1,144 @@
+.contact{
+    height: 90%;
+    width: 90%;
+    background-color: #fffbeead;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact__image-wrapper{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contact__image{
+    width: 100%;
+}
+
+.contact__right-side{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding:0 7.3% 0 4.7%;
+    width: 100%;
+}
+
+.contact__title{
+    font-size: 50px;
+    font-family: $ff-mukta;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contact__form-wrapper, .contact__input-line{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact__input-line{
+    margin-bottom: 45px;
+}
+
+.contact__label{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact__input{
+    height: 30px;
+    outline: none;
+    padding: 5px 0;
+    border-bottom: 2px solid #121212;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    color: #121212;
+    background-color: transparent;
+    &--textarea{
+        height: 100px;
+        outline: none;
+        padding: 5px 0;
+        border-bottom: 2px solid #121212;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        width: 100%;
+        color: #121212;
+        resize: none;
+        background-color: transparent;
+    }
+}
+
+
+.contact__submit-button{
+    padding: 18px 55px;
+    border-radius: 50px;
+    color: #121212;
+    background-color: #fffbeead;
+    border: 2px solid #121212;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    margin: auto;
+    &:hover{
+        color: #FFFBEE;
+        background-color: #121212;
+    }
+}
+
+
+
+@include tablet{
+    .contact__image-wrapper{
+        width: 80%;
+        margin: auto auto 30px;
+        
+    }
+}
+
+@include tablet-grande{
+    .contact__image-wrapper{
+        width: 60%;
+    }
+}
+
+
+@include desktop {
+    .contact{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFBEE;
+    }
+
+    .contact__image-wrapper{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+
+
+}
+
+@include wide {
+    .contact__image-wrapper{
+        width: 80%;
+    }
+
+}
