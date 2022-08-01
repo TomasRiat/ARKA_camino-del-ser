@@ -10,10 +10,9 @@
     &__text{
         padding:10px;
         border: 5px solid $clr-indigo;
-        margin-top:80px;
         border-radius: 20px;
         text-align: justify;
-        margin-bottom: 10%;
+        margin: 20px;
     }
     &__imagenes{
         padding: 10px;
@@ -65,9 +64,17 @@
         font-size: 3rem;
     }
 
+    .cursos__text{
+        margin: 30px 100px;
+    }
+
     .cursos__imagenes{
         flex-direction: row;
     }
 }
 
-
+@include extra-wide{
+    .cursos__text{
+        margin: 30px 150px;
+    }
+}

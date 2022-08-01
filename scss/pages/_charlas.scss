@@ -45,7 +45,17 @@
         font-size: 3rem;
     }
 
+    .charlas__text{
+        margin: 30px 100px;
+    }
+
     .charlas__imagenes{
         flex-direction: row;
+    }
+}
+
+@include extra-wide{
+    .cursos__text{
+        margin: 30px 150px;
     }
 }
