@@ -20,13 +20,6 @@ strong::selection {
   color: indigo;
 }
 
-h1 {
-  transition: transform 200ms ease;
-}
-h1:hover {
-  transform: scale(1.05);
-}
-
 body {
   overflow-x: hidden;
 }
