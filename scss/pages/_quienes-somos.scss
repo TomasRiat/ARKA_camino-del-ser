@@ -9,12 +9,7 @@
 
 .analia{
     &__titulo{
-        background-color: $clr-h1-indigo;
-        padding: 5px;
-        text-align: center;
-        @include font(2rem, 500);
-        color: $clr-white;
-        font-family: 'Francois One', sans-serif;
+        @include h2;
     }
     &__contenedor{
         display: flex;
@@ -24,7 +19,8 @@
     }
     &__foto{
     width: 100%;
-    padding: 10px;
+    margin: 15px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);
     }
     &__texto{
         padding:10px;
@@ -39,7 +35,7 @@
 
 .javier{
     &__titulo{
-        @extend .analia__titulo;
+        @include h2;
     }
     &__contenedor{
         @extend .analia__contenedor;

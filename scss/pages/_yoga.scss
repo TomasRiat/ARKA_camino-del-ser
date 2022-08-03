@@ -6,18 +6,21 @@
     }
 }
 
-.yoga__texto{
-    padding:10px;
-    border: 5px solid $clr-indigo;
-    width: 100%;
-    margin-top:20px;
-    border-radius: 20px;
-    text-align: justify;
-    margin-bottom: 20px;
+.yoga{
+    &__titulo{
+        @include h2;
+    }
+    &__texto{
+        padding:10px;
+        border: 5px solid $clr-indigo;
+        border-radius: 20px;
+        text-align:justify;
+        margin: 15px;
+}
 }
 
-.yoga-titulo{
-    @extend .analia__titulo;
+.gallery__titulo{
+    @include h2;
 }
 
 
@@ -58,6 +61,7 @@
 .gallery__item:nth-child(9){
     grid-column-start: span 3;
 }
+
 
 @include celular-lateral{
     .gallery{
@@ -123,6 +127,10 @@
         font-size: 3rem;
     }
 
+    .yoga__texto{
+        margin: 30px 100px;
+    }
+
     .gallery{
         grid-template-columns: repeat(4, 1fr);
         margin: 50px;
@@ -176,7 +184,7 @@
 
 @include wide {
     .gallery{
-        margin: 100px;
-        grid-auto-rows: 200px;
+        margin:  100px 200px;
+        grid-auto-rows: 150px;
     }
 }

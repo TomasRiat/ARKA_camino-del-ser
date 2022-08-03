@@ -80,8 +80,8 @@
     }
 }
 
-.contacto__submit-boton{
-    @extend .boton__contacto;
+.boton__contacto{
+    @include boton__contacto;
 }
 
 @include tablet{

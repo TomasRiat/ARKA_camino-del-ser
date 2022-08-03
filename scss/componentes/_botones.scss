@@ -1,4 +1,4 @@
-.boton__contacto{
+@mixin boton__contacto {
     padding: 18px 55px;
     border-radius: 50px;
     color: #121212;
@@ -14,3 +14,4 @@
         background-color: #121212;
     }
 }
+    
