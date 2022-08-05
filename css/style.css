@@ -13,11 +13,11 @@ a {
 }
 
 p::selection {
-  color: indigo;
+  color: rgb(114, 41, 149);
 }
 
 strong::selection {
-  color: indigo;
+  color: rgb(114, 41, 149);
 }
 
 body {
@@ -25,15 +25,15 @@ body {
 }
 
 .c-indigo {
-  color: rgba(76, 0, 130, 0.86);
+  color: rgb(114, 41, 149);
 }
 
 .nav-item a:hover {
-  color: rgba(76, 0, 130, 0.86);
+  color: rgb(114, 41, 149);
 }
 
 .navbar-toggler {
-  border: 3px solid rgba(76, 0, 130, 0.86);
+  border: 3px solid rgb(114, 41, 149);
   box-shadow: 0px 9px 28px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -55,7 +55,7 @@ body {
   height: 50vh;
 }
 .banner-index__text, .banner-yoga__texto, .banner-cursos__text, .banner-charlas__texto, .banner-about-us__text {
-  color: rgba(76, 0, 130, 0.959);
+  color: rgb(114, 41, 149);
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
@@ -67,7 +67,7 @@ body {
 }
 
 .camino-del-ser h2 {
-  background-color: rgba(76, 0, 130, 0.959);
+  background-color: rgb(114, 41, 149);
   padding: 5px;
   text-align: center;
   font-size: 2rem;
@@ -81,11 +81,11 @@ body {
   flex-direction: column;
 }
 .contenedor__texto {
+  border: 3px solid rgb(114, 41, 149);
+  border-radius: 20px;
   padding: 10px;
-  border: 5px solid rgba(76, 0, 130, 0.86);
   width: 80%;
   margin-top: 20px;
-  border-radius: 20px;
   margin-left: 35px;
 }
 .contenedor__video iframe {
@@ -101,7 +101,7 @@ iframe {
 }
 
 .actividades__titulo {
-  background-color: rgba(76, 0, 130, 0.959);
+  background-color: rgb(114, 41, 149);
   padding: 5px;
   text-align: center;
   font-size: 2rem;
@@ -182,7 +182,7 @@ iframe {
   height: 50vh;
 }
 .analia__titulo {
-  background-color: rgba(76, 0, 130, 0.959);
+  background-color: rgb(114, 41, 149);
   padding: 5px;
   text-align: center;
   font-size: 2rem;
@@ -202,17 +202,17 @@ iframe {
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.24);
 }
 .analia__texto, .javier__texto {
+  border: 3px solid rgb(114, 41, 149);
+  border-radius: 20px;
   padding: 10px;
-  border: 5px solid rgba(76, 0, 130, 0.86);
   margin-top: 20px;
   width: 80%;
-  border-radius: 20px;
   text-align: center;
   margin-bottom: 30px;
 }
 
 .javier__titulo {
-  background-color: rgba(76, 0, 130, 0.959);
+  background-color: rgb(114, 41, 149);
   padding: 5px;
   text-align: center;
   font-size: 2rem;
@@ -297,7 +297,7 @@ iframe {
   }
 }
 .banner-charlas {
-  background-image: url(../assets/img/foto-fondo4.jpg);
+  background-image: url(../assets/img/foto-fondo-charlas.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -305,7 +305,7 @@ iframe {
   height: 50vh;
 }
 .charlas__titulo {
-  background-color: rgba(76, 0, 130, 0.959);
+  background-color: rgb(114, 41, 149);
   padding: 5px;
   text-align: center;
   font-size: 2rem;
@@ -314,7 +314,7 @@ iframe {
   font-family: "Francois One", sans-serif;
 }
 .testimonios__titulo {
-  background-color: rgba(76, 0, 130, 0.959);
+  background-color: rgb(114, 41, 149);
   padding: 5px;
   text-align: center;
   font-size: 2rem;
@@ -347,6 +347,7 @@ iframe {
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+  margin: 20px;
 }
 
 .testimonios__img {
@@ -394,7 +395,7 @@ iframe {
   height: 50vh;
 }
 .cursos__titulo {
-  background-color: rgba(76, 0, 130, 0.959);
+  background-color: rgb(114, 41, 149);
   padding: 5px;
   text-align: center;
   font-size: 2rem;
@@ -403,9 +404,9 @@ iframe {
   font-family: "Francois One", sans-serif;
 }
 .cursos__text, .charlas__text {
-  padding: 10px;
-  border: 5px solid rgba(76, 0, 130, 0.86);
+  border: 3px solid rgb(114, 41, 149);
   border-radius: 20px;
+  padding: 10px;
   text-align: justify;
   margin: 20px;
 }
@@ -422,10 +423,10 @@ iframe {
 }
 
 .img__cursos, .actividades__contenido, .img__charlas {
-  border: 5px solid rgba(76, 0, 130, 0.86);
+  border: 3px solid rgb(114, 41, 149);
   border-radius: 20px;
-  min-width: 300px;
   padding: 10px;
+  min-width: 300px;
   transition: scale 200ms ease;
 }
 .img__cursos:hover, .actividades__contenido:hover, .img__charlas:hover {
@@ -464,7 +465,7 @@ iframe {
   }
 }
 .banner-yoga {
-  background-image: url(../assets/img/foto-fondo3.jpg);
+  background-image: url(../assets/img/foto-fondo-yoga.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -472,7 +473,7 @@ iframe {
   height: 50vh;
 }
 .yoga__titulo {
-  background-color: rgba(76, 0, 130, 0.959);
+  background-color: rgb(114, 41, 149);
   padding: 5px;
   text-align: center;
   font-size: 2rem;
@@ -481,15 +482,15 @@ iframe {
   font-family: "Francois One", sans-serif;
 }
 .yoga__texto {
-  padding: 10px;
-  border: 5px solid rgba(76, 0, 130, 0.86);
+  border: 3px solid rgb(114, 41, 149);
   border-radius: 20px;
+  padding: 10px;
   text-align: justify;
   margin: 15px;
 }
 
 .gallery__titulo {
-  background-color: rgba(76, 0, 130, 0.959);
+  background-color: rgb(114, 41, 149);
   padding: 5px;
   text-align: center;
   font-size: 2rem;
@@ -592,8 +593,9 @@ iframe {
   .gallery {
     grid-template-columns: repeat(4, 1fr);
     margin: 50px;
-    border: 5px solid indigo;
+    border: 3px solid rgb(114, 41, 149);
     border-radius: 20px;
+    padding: 10px;
     grid-auto-rows: 150px;
   }
   .gallery__item:nth-child(1) {
@@ -717,11 +719,11 @@ iframe {
   background-color: transparent;
 }
 
-.boton__contacto {
+.boton__contacto1 {
   padding: 18px 55px;
   border-radius: 50px;
   color: #121212;
-  background-color: #fff;
+  background-color: white;
   border: 2px solid #121212;
   font-weight: 600;
   font-size: 18px;
@@ -729,8 +731,26 @@ iframe {
   margin: auto;
   transition: 300ms ease all;
 }
-.boton__contacto:hover {
-  color: #fff;
+.boton__contacto1:hover {
+  color: white;
+  background-color: #121212;
+}
+
+.boton__contacto2 {
+  padding: 18px 55px;
+  border-radius: 50px;
+  color: #121212;
+  background-color: white;
+  border: 2px solid #121212;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  margin: auto;
+  transition: 300ms ease all;
+  margin: 10px;
+}
+.boton__contacto2:hover {
+  color: white;
   background-color: #121212;
 }
 
@@ -770,11 +790,10 @@ iframe {
   }
 }
 footer {
-  background-color: rgba(76, 0, 130, 0.959);
+  background-color: rgb(114, 41, 149);
   color: white;
   box-shadow: 30px 9px 28px 3px rgba(0, 0, 0, 0.9);
 }
-
 footer a:hover {
   text-decoration: none;
   color: white;
@@ -800,11 +819,9 @@ footer a:hover {
   transition-property: outline-offset, outline-color, backgroud-color;
   transition-duration: 0.25s;
 }
-
 .icon:hover {
   outline-offset: 4px;
 }
-
 .icon:hover i {
   animation: shake 0.25s;
 }

@@ -1,5 +1,5 @@
 .banner-yoga{
-    background-image: url(../assets/img/foto-fondo3.jpg);
+    background-image: url(../assets/img/foto-fondo-yoga.jpg);
     @include background-image;
     &__texto{
         @extend .banner-index__text;
@@ -11,9 +11,7 @@
         @include h2;
     }
     &__texto{
-        padding:10px;
-        border: 5px solid $clr-indigo;
-        border-radius: 20px;
+        @include bordes;
         text-align:justify;
         margin: 15px;
 }
@@ -134,8 +132,7 @@
     .gallery{
         grid-template-columns: repeat(4, 1fr);
         margin: 50px;
-        border: 5px solid indigo;
-        border-radius: 20px;
+        @include bordes;
         grid-auto-rows: 150px;
     }
 

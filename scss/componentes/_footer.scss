@@ -1,12 +1,11 @@
 footer{
-    background-color: $clr-h1-indigo;
+    background-color: $clr-indigo;
     color: $clr-white;
     box-shadow: 30px 9px 28px 3px rgba(0,0,0,0.9) ;
-}
-
-footer a:hover{
-    text-decoration: none;
-    color: $clr-white;
+    & a:hover{
+        text-decoration: none;
+        color: $clr-white;
+    }
 }
 
 .icons{
@@ -29,15 +28,14 @@ footer a:hover{
     outline: 2px solid $clr-white;
     transition-property: outline-offset, outline-color, backgroud-color;
     transition-duration: .25s;
+    &:hover{
+        outline-offset: 4px;
+    }
+    &:hover i{
+        animation: shake .25s;
+    }
 }
 
-.icon:hover{
-    outline-offset: 4px;
-}
-
-.icon:hover i{
-    animation: shake .25s;
-}
 
 .icon--youtube:hover{
     background: map-get($map: $redes, $key: youtube);

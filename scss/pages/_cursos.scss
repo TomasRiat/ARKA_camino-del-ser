@@ -11,9 +11,7 @@
         @include h2;
     }
     &__text{
-        padding:10px;
-        border: 5px solid $clr-indigo;
-        border-radius: 20px;
+        @include bordes;
         text-align: justify;
         margin: 20px;
     }
@@ -31,11 +29,8 @@
 }
 
 .img__cursos{
-    border: 5px solid $clr-indigo;
-    border-radius: 20px;
-
+    @include bordes;
     min-width: 300px;
-    padding: 10px;
     transition: scale 200ms ease;
     &:hover{
         scale: 1.02;

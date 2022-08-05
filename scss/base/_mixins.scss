@@ -12,10 +12,16 @@
 }
 
 @mixin h2 {
-    background-color: $clr-h1-indigo;
+    background-color: $clr-indigo;
     padding: 5px;
     text-align: center;
     @include font(2rem, 500);
     color: $clr-white;
     font-family: 'Francois One', sans-serif;
+}
+
+@mixin bordes {
+    border: 3px solid $clr-indigo;
+    border-radius: 20px;
+    padding:10px;
 }

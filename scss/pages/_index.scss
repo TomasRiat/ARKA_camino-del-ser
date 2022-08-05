@@ -2,7 +2,7 @@
     background-image: url(../assets/img/foto-fondo5.jpg);
     @include background-image;
     &__text{
-        color: $clr-h1-indigo;
+        color: $clr-indigo;
         text-align: center;
         @include font(2.5rem, 700);
         background-color: $clr-bg-h1;
@@ -23,11 +23,9 @@
     display: flex;
     flex-direction: column;
     &__texto{
-        padding:10px;
-    border: 5px solid $clr-indigo;
+    @include bordes;
     width: 80%;
     margin-top:20px;
-    border-radius: 20px;
     margin-left: 35px;
     }
     &__video iframe{

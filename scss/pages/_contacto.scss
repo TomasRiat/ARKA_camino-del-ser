@@ -80,8 +80,15 @@
     }
 }
 
-.boton__contacto{
+
+.boton__contacto1{
     @include boton__contacto;
+}
+
+.boton__contacto2{
+    @include boton__contacto;
+    margin: 10px;
+    
 }
 
 @include tablet{

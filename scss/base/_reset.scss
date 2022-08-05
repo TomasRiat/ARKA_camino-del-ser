@@ -13,11 +13,11 @@ a{
 }
 
 p::selection{
-    color: indigo;
+    color: $clr-indigo;
 }
 
 strong::selection{
-    color: indigo;
+    color: $clr-indigo;
 }
 
 body{

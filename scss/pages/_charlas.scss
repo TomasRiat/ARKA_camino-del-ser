@@ -1,5 +1,5 @@
 .banner-charlas{
-    background-image: url(../assets/img/foto-fondo4.jpg);
+    background-image: url(../assets/img/foto-fondo-charlas.jpg);
     @include background-image;
     &__texto{
         @extend .banner-index__text;
@@ -52,6 +52,7 @@
     gap: 20px;
     padding: 20px;
     grid-auto-flow: dense;
+    margin: 20px;
 }
 
 .testimonios__img{
