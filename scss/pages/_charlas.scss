@@ -26,26 +26,7 @@
     @include h2;
 }
 
-.testimonios__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.testimonios__item:hover {
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-
-.testimonios {
+.testimonios{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-auto-rows: minmax(200px, auto);
@@ -53,13 +34,25 @@
     padding: 20px;
     grid-auto-flow: dense;
     margin: 20px;
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &:hover {
+            filter: opacity(0.9);
+            transform: scale(1.04);
+        }
+    }&__img{
+        object-fit: cover;
+        width: 100%;
+    }
 }
-
-.testimonios__img{
-    object-fit: cover;
-    width: 100%;
-}
-
 
 @include celular-lateral{
     .img__charlas{

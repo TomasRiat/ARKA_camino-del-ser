@@ -4,9 +4,7 @@
     background-color: #fff;
     margin: auto;
     padding: 20px;
-}
-
-.contact__image-wrapper{
+&__image-wrapper{
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -14,47 +12,33 @@
     align-items: center;
     margin-bottom: 50px;
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.24);
-}
-
-.contact__image{
+}&__image{
     width: 100%;
-}
-
-.contact__right-side{
+}&__right-side{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     padding:0 7.3% 0 4.7%;
     width: 100%;
-}
-
-.contact__title{
+}&__title{
     font-size: 50px;
     font-family: $ff-mukta;
     font-weight: 700;
     margin-bottom: 20px;
     text-transform: uppercase;
-}
-
-.contact__form-wrapper, .contact__input-line{
+}&__form-wrapper, &__input-line{
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
-}
-
-.contact__input-line{
+}&__input-line{
     margin-bottom: 45px;
-}
-
-.contact__label{
+}&__label{
     font-size: 18px;
     font-weight: 600;
-}
-
-.contact__input{
+}&__input{
     height: 30px;
     outline: none;
     padding: 5px 0;
@@ -79,7 +63,7 @@
         background-color: transparent;
     }
 }
-
+}
 
 .boton__contacto1{
     @include boton__contacto;
@@ -87,7 +71,7 @@
 
 .boton__contacto2{
     @include boton__contacto;
-    margin: 10px;
+    margin-top: 10px;
     
 }
 
@@ -115,9 +99,7 @@
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    }
-
-    .contact__image-wrapper{
+    &__image-wrapper{
         height: 100%;
         width: 100%;
         overflow: hidden;
@@ -125,8 +107,7 @@
         flex-direction: row;
         margin: auto;
     }
-
-
+    }
 }
 
 @include wide {

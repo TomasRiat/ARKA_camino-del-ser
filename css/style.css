@@ -323,6 +323,15 @@ iframe {
   font-family: "Francois One", sans-serif;
 }
 
+.testimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+  margin: 20px;
+}
 .testimonios__item {
   display: flex;
   align-items: center;
@@ -334,22 +343,10 @@ iframe {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .testimonios__item:hover {
   filter: opacity(0.9);
   transform: scale(1.04);
 }
-
-.testimonios {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: minmax(200px, auto);
-  gap: 20px;
-  padding: 20px;
-  grid-auto-flow: dense;
-  margin: 20px;
-}
-
 .testimonios__img {
   object-fit: cover;
   width: 100%;
@@ -516,23 +513,18 @@ iframe {
   transform: scale(1.03);
   box-shadow: 0px 9px 28px 3px rgba(0, 0, 0, 0.9);
 }
-
 .gallery__item:nth-child(3) {
   grid-row-start: span 2;
 }
-
 .gallery__item:nth-child(4) {
   grid-column-start: span 2;
 }
-
 .gallery__item:nth-child(5) {
   grid-row-start: span 2;
 }
-
 .gallery__item:nth-child(8) {
   grid-column-start: span 2;
 }
-
 .gallery__item:nth-child(9) {
   grid-column-start: span 3;
 }
@@ -644,7 +636,6 @@ iframe {
   margin: auto;
   padding: 20px;
 }
-
 .contact__image-wrapper {
   height: 100%;
   width: 100%;
@@ -654,11 +645,9 @@ iframe {
   margin-bottom: 50px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.24);
 }
-
 .contact__image {
   width: 100%;
 }
-
 .contact__right-side {
   display: flex;
   justify-content: center;
@@ -667,7 +656,6 @@ iframe {
   padding: 0 7.3% 0 4.7%;
   width: 100%;
 }
-
 .contact__title {
   font-size: 50px;
   font-family: "Mukta", sans-serif;
@@ -675,7 +663,6 @@ iframe {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-
 .contact__form-wrapper, .contact__input-line {
   display: flex;
   justify-content: center;
@@ -683,16 +670,13 @@ iframe {
   flex-direction: column;
   width: 100%;
 }
-
 .contact__input-line {
   margin-bottom: 45px;
 }
-
 .contact__label {
   font-size: 18px;
   font-weight: 600;
 }
-
 .contact__input {
   height: 30px;
   outline: none;
@@ -747,7 +731,7 @@ iframe {
   cursor: pointer;
   margin: auto;
   transition: 300ms ease all;
-  margin: 10px;
+  margin-top: 10px;
 }
 .boton__contacto2:hover {
   color: white;
