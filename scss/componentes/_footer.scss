@@ -11,7 +11,7 @@ footer{
 .icons{
     display: flex;
     column-gap: 25px;
-    padding: 15px;
+    padding: 12px;
     justify-content: space-around;
 }
 
@@ -22,7 +22,7 @@ footer{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 26px;
+    font-size: 25px;
     color: $clr-white;
     border-radius: 50%;
     outline: 2px solid $clr-white;
