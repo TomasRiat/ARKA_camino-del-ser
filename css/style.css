@@ -112,6 +112,12 @@ iframe {
 .actividades__imagenes {
   gap: 15px;
 }
+.actividades__imagenes--descripcion p {
+  max-width: 500px;
+  margin-top: 10px;
+  text-align: center;
+}
+
 @media screen and (min-width: 475px) {
   .contenedor__texto {
     margin-left: 50px;

@@ -53,6 +53,11 @@ iframe{
     &__contenido{
         @extend .img__cursos;
     }
+    &__imagenes--descripcion p {
+        max-width: 500px;
+        margin-top: 10px;
+        text-align: center;
+    }
     
 }
 
