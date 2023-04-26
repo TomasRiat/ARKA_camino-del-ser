@@ -17,6 +17,23 @@
 }
 }
 
+.yoga__videos{
+    display: flex;
+    flex-direction: column;
+    &--container{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+}
+
+
+video{
+    width:300px;
+    padding: 20px;
+}
+
+
 .gallery__titulo{
     @include h2;
 }
@@ -72,6 +89,14 @@
 }
 
 @include tablet-grande{
+
+    .yoga__videos{
+        &--container{
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
     .gallery{
         grid-template-columns: repeat(5, 1fr);
         grid-auto-rows: 150px;
